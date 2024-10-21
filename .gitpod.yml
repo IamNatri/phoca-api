@@ -1,0 +1,23 @@
+image: 
+  file: .gitpod.Containerfile
+
+tasks:
+  - init: echo 'Initializing project'
+    command: echo 'Starting project'
+
+  # - name: DEV API
+  #   command: ./scripts/phoca-api-dev.sh
+
+ports:
+  - port: 8080
+    onOpen: ignore
+
+vscode:
+  extensions:
+    - redhat.vscode-yaml
+    - redhat.vscode-xml
+    - ms-azuretools.vscode-docker
+    - ms-python.python
+    - enkia.tokyo-night
+
+# additionalRepositories:
